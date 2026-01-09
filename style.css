@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("https://png.pngtree.com/background/20250604/original/pngtree-lush-green-spring-nature-background-picture-image_16619614.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.qwerty {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-logo {
+    height: 45px;
+}
+
+.custom-link {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 25px 20px !important;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.custom-link:hover {
+    color: rgb(255, 56, 56) !important;
+    background-color: white;
+}
+
+.highlight-link {
+    background-color: rgb(255, 56, 56);
+}
+
+.highlight-link:hover {
+    background-color: white;
+}
+
+/* ================= HERO CONTENT ================= */
+
+.content {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.h-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.line-1 {
+    font-size: clamp(42px, 8vw, 80px);
+    font-weight: 800;
+}
+
+.red-h {
+    color: rgb(255, 56, 56);
+}
+
+.date {
+    font-size: clamp(24px, 4vw, 45px);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.at {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.place {
+    font-size: clamp(18px, 3vw, 33px);
+    font-weight: 700;
+}
+
+/* ================= MOBILE NAV FIX ================= */
+
+@media (max-width: 991px) {
+    .custom-link {
+        padding: 15px !important;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
